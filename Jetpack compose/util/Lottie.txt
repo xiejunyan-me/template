@@ -1,0 +1,15 @@
+@Composable
+fun LottieLoadingView(
+    id: Int,
+    modifier: Modifier = Modifier,
+    iterations: Int = LottieConstants.IterateForever,
+    speed: Float = 1f
+) {
+    val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(id))
+    LottieAnimation(
+        composition,
+        modifier = modifier.defaultMinSize(300.dp),
+        iterations = iterations,
+        speed = speed
+    )
+}
