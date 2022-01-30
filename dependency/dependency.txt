@@ -7,3 +7,6 @@ https://github.com/ReactiveX/RxAndroid
 
 lottie compose
 implementation "com.airbnb.android:lottie-compose:4.1.0"
+
+constraintlayout
+implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
